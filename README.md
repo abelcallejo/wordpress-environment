@@ -34,7 +34,7 @@ echo $environment;
 {
     "platform": {
         "name": "WordPress",
-        "version": "Unknown"
+        "version": "4.9.1"
     },
     "interpreter": {
         "name": "PHP",
@@ -46,11 +46,11 @@ echo $environment;
     },
     "database_server": {
         "name": "MySQL",
-        "version": "Unknown"
+        "version": "5.7.20"
     },
     "operating_system": {
         "name": "Darwin",
-        "version": "14.5.0"
+        "version": "17.0.0"
     }
 }
 ```
