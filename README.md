@@ -38,7 +38,7 @@ echo $environment;
     },
     "interpreter": {
         "name": "PHP",
-        "version": "5.5.36"
+        "version": "7.2.0"
     },
     "web_server": {
         "name": "Apache",
@@ -55,3 +55,20 @@ echo $environment;
 }
 ```
 
+## More examples
+
+Let's get rid of the other stuffs and focus on the actual values.
+
+**Getting the Wordpress version**
+
+```php
+include_once 'W18T.class.php';
+
+$environment = new W18T();
+
+echo $environment->platform->version;
+```
+**Output**
+```
+4.9.1
+```
