@@ -2,7 +2,9 @@
 
 Abbreviated as **W18T**, is a wordpress library for easily getting the major environment variables.
 
-## Hello World
+## Quickstart
+
+Enough of the bullshit. Let's dive in already.
 
 ```php
 <?php
@@ -17,3 +19,7 @@ echo $environment;
 
 ?>
 ```
+
+**Output**
+
+
