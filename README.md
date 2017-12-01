@@ -57,17 +57,17 @@ echo $environment;
 
 ## More examples
 
-Let's get rid of the php tags, header, and the inclusion. Let's focus on the actual values.
-
-**Getting the Wordpress version**
+Now let's get rid of the <?php ?> tags, the header() function, and the file include_once. Let's focus on getting the actual values.
 
 ```php
 $environment = new W18T();
 
-echo $environment->platform->version;       // 4.9.1
-echo $environment->interpreter->version;    // 7.2.0
-```
-**Output**
-```
-4.9.1
+echo $environment->platform->version;           // 4.9.1
+echo $environment->interpreter->version;        // 7.2.0
+echo $environment->web_server->name;            // Apache
+echo $environment->web_server->version;         // 2.4.16
+echo $environment->database_server->name;       // MySQL
+echo $environment->database_server->version;    // 5.7.20
+echo $environment->operating_system->name;      // Darwin
+echo $environment->operating_system->version;   // 17.0.0
 ```
