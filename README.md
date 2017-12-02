@@ -57,7 +57,7 @@ echo $environment;
 
 ## More examples
 
-Now let's get rid of the <?php ?> tags, the header() function, and the file include_once. Let's focus on getting the actual values.
+Now let's get rid of the `<?php` `?>` tags, the `header()` function, and the file `include_once`. Let's focus on getting the actual values.
 
 ```php
 $environment = new W18T();
