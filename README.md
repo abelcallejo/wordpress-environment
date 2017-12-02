@@ -71,3 +71,11 @@ echo $environment->database_server->version;    // 5.7.20
 echo $environment->operating_system->name;      // Darwin
 echo $environment->operating_system->version;   // 17.0.0
 ```
+
+## Sample plugin
+
+I've made a very simple wordpress plugin that uses the W18T library. All you have to do is to:
+1. **Download** the plugin - [w18t-sample-plugin.zip](https://github.com/abelcallejo/w18t-sample-plugin/archive/master.zip)
+2. **Install** it in your wordpress
+3. **Activate** the plugin
+4. Go to the **Dashboard** &rsaquo; **W18T plugin**
