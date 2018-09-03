@@ -82,7 +82,7 @@ echo $environment;
 
 ## More examples
 
-Now let's get rid of the `<?php` `?>` tags, the `header()` function, and the file `include_once`. Let's focus on getting the actual values for realistic purposes.
+For realistic purposes, let's focus on getting the actual values.
 
 ```php
 $environment = new W18T();
@@ -91,21 +91,24 @@ $environment = new W18T();
 echo $environment->operating_system;            // "Darwin"
 echo $environment->operating_system->version;   // "17.5.0"
 
-// Is the version still supported? Get more detailed
+// Is the version still supported? Get the numeric values that can be used for comparison
 echo $environment->operating_system->version->major;    // 17
 echo $environment->operating_system->version->minor;    // 17.5
 
 // Version of PHP?
-echo $environment->interpreter->version;    // 7.2.9
+echo $environment->interpreter->version;        // "7.2.9"
 
 // Version of Apache?
-echo $environment->web_server->version;         // 2.4.34
+echo $environment->web_server->version;         // "2.4.34"
 
 // Version of MySQL?
-echo $environment->database_server->version;    // 5.6.27
+echo $environment->database_server->version;    // "5.6.27"
 
 // Version of WordPress?
-echo $environment->platform->version;           // 4.9.8
+echo $environment->platform->version;           // "4.9.8"
+
+// It works the same as above
+echo $environment->platform->version->specific; // "4.9.8"
 ```
 
 ## Sample plugin
