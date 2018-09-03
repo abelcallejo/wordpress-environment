@@ -118,3 +118,13 @@ I've made a very simple wordpress plugin that uses the W18T library. All you hav
 2. **Install** it in your wordpress
 3. **Activate** the plugin
 4. Go to the **Dashboard** &rsaquo; **W18T plugin**
+
+## Releases
+
+### v1.0 Alpha
+
+Bare values of the the environment variables. Released December 2, 2017
+
+### v2.0 Beta
+
+Added numeric major and minor versions of the environment varialbles. Released September 4, 2018
