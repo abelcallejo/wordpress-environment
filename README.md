@@ -191,10 +191,10 @@ echo $environment;
 ```
 ## Releases
 
-### v1.0 Alpha
+### Alpha
 
-Bare values of the the environment variables. Released December 2, 2017
+**1.0** - Bare values of the the environment variables. *Released December 2, 2017*
 
-### v2.0 Beta
+### Beta
 
-Added numeric major and minor versions of the environment varialbles. Released September 4, 2018
+**2.0** - Added numeric major and minor versions of the environment varialbles. *Released September 4, 2018*
