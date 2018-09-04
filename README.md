@@ -109,7 +109,7 @@ echo $environment->platform->version->specific; // "4.9.8"
 ## Demo
 
 I've made a very simple wordpress plugin that uses the W18T library. All you have to do is to:
-1. **Download** the plugin - [w18t-sample-plugin.zip](https://github.com/abelcallejo/wordpress-environment/archive/2.0.zip)
+1. **Download** the plugin - [w18t-sample-plugin-master.zip](https://github.com/abelcallejo/w18t-sample-plugin/archive/master.zip)
 2. **Install** it in your wordpress
 3. **Activate** the plugin
 4. Go to the **Dashboard** &rsaquo; **W18T plugin**
