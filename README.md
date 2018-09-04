@@ -109,7 +109,7 @@ echo $environment->platform->version->specific; // "4.9.8"
 ## Demo
 
 I've made a very simple wordpress plugin that uses the W18T library. All you have to do is to:
-1. **Download** the plugin - [w18t-sample-plugin.zip](https://github.com/abelcallejo/w18t-sample-plugin/archive/master.zip)
+1. **Download** the plugin - [w18t-sample-plugin.zip](https://github.com/abelcallejo/wordpress-environment/archive/2.0.zip)
 2. **Install** it in your wordpress
 3. **Activate** the plugin
 4. Go to the **Dashboard** &rsaquo; **W18T plugin**
@@ -150,7 +150,7 @@ echo $environment;
 
 **Zip file**. The traditional way of installing libraries in PHP is by using compressed files. This intuitive-*vises* the package management for PHP projects. For this method, installation is done by user interface.
 
-1. Download a Zip copy of the library - [wordpress-environment-master.zip](https://github.com/abelcallejo/wordpress-environment/archive/master.zip)
+1. Download a Zip copy of the library - [wordpress-environment-2.0.zip](https://github.com/abelcallejo/wordpress-environment/archive/2.0.zip)
 2. Decompress/unzip the downloaded file
 3. In your PHP code, include the library like so:
 
