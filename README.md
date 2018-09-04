@@ -17,15 +17,10 @@ Enough of all those bullshit. Let's dive in!
 
 ```php
 <?php
-
-header( 'Content-Type: application/json' );
-
-include_once 'W18T.class.php';
-
+require_once 'W18T.class.php';
 $environment = new W18T();
 
 echo $environment;
-
 ?>
 ```
 
@@ -127,8 +122,8 @@ Installing the W18T library can be done in 3 different ways. Simply choose the o
 
 The current recommended way of installing libraries in PHP is by using Composer. This simplifies the package management for PHP projects. For this method, installation is done by command-line.
 
-1. Make sure you have installed [Composer](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx)
-2. Go to your working directory.
+1. Make sure you have installed Composer - [Installation procedure](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx)
+2. Go to your working directory
 
 ```sh
 cd /path/to/working-dir
@@ -144,21 +139,29 @@ composer require abelcallejo/wordpress-environment:dev-master
 
 ```php
 <?php
-
-require '/path/to/working-dir/vendor/autoload.php';
-
+require_once '/path/to/working-dir/vendor/autoload.php';
 $environment = new W18T();
 
 echo $environment;
-
 ?>
 ```
 
-### Classic
+### ZIP
+
+The traditional way of installing libraries in PHP is by using compressed files. This intuitive-*vises* the package management for PHP projects. For this method, installation is done by user interface.
 
 1. Download a ZIP copy of the library - [wordpress-environment-master.zip](https://github.com/abelcallejo/wordpress-environment/archive/master.zip)
 2. Decompress/unzip the file
 3. In your PHP code, include the library like so:
+
+```php
+<?php
+require_once '/path/to/working-dir/wordpress-environment/W18T.class.php';
+$environment = new W18T();
+
+echo $environment;
+?>
+```
 ### Git
 
 ## Releases
