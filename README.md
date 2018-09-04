@@ -111,13 +111,55 @@ echo $environment->platform->version;           // "4.9.8"
 echo $environment->platform->version->specific; // "4.9.8"
 ```
 
-## Sample plugin
+## Demo
 
 I've made a very simple wordpress plugin that uses the W18T library. All you have to do is to:
 1. **Download** the plugin - [w18t-sample-plugin.zip](https://github.com/abelcallejo/w18t-sample-plugin/archive/master.zip)
 2. **Install** it in your wordpress
 3. **Activate** the plugin
 4. Go to the **Dashboard** &rsaquo; **W18T plugin**
+
+## Installation
+
+Installing the W18T library can be done in 3 different ways. Simply choose the one that fits best to your needs.
+
+### Composer
+
+The current recommended way of installing libraries in PHP is by using Composer. This simplifies the package management for PHP projects. For this method, installation is done by command-line.
+
+1. Make sure you have installed [Composer](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx)
+2. Go to your working directory.
+
+```sh
+cd /path/to/working-dir
+```
+
+3. Add the W18T library in your project's library packages
+
+```sh
+composer require abelcallejo/wordpress-environment:dev-master
+```
+
+4. In your PHP code, include the library like so:
+
+```php
+<?php
+
+require '/path/to/working-dir/vendor/autoload.php';
+
+$environment = new W18T();
+
+echo $environment;
+
+?>
+```
+
+### Classic
+
+1. Download a ZIP copy of the library - [wordpress-environment-master.zip](https://github.com/abelcallejo/wordpress-environment/archive/master.zip)
+2. Decompress/unzip the file
+3. In your PHP code, include the library like so:
+### Git
 
 ## Releases
 
