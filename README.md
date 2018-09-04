@@ -118,9 +118,9 @@ I've made a very simple wordpress plugin that uses the W18T library. All you hav
 
 Installing the W18T library can be done in 3 different ways. Simply choose the one that fits best to your needs.
 
-### Composer
+### Method A
 
-The current recommended way of installing libraries in PHP is by using Composer. This simplifies the package management for PHP projects. For this method, installation is done by command-line.
+**Composer**. The current recommended way of installing libraries in PHP is by using a package manager. This simplifies the package management for PHP projects. For this method, installation is done by command-line.
 
 1. Make sure you have installed Composer - [Installation procedure](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx)
 2. Go to your working directory
@@ -146,12 +146,12 @@ echo $environment;
 ?>
 ```
 
-### ZIP
+### Method B
 
-The traditional way of installing libraries in PHP is by using compressed files. This intuitive-*vises* the package management for PHP projects. For this method, installation is done by user interface.
+**Zip file**. The traditional way of installing libraries in PHP is by using compressed files. This intuitive-*vises* the package management for PHP projects. For this method, installation is done by user interface.
 
-1. Download a ZIP copy of the library - [wordpress-environment-master.zip](https://github.com/abelcallejo/wordpress-environment/archive/master.zip)
-2. Decompress/unzip the file
+1. Download a Zip copy of the library - [wordpress-environment-master.zip](https://github.com/abelcallejo/wordpress-environment/archive/master.zip)
+2. Decompress/unzip the downloaded file
 3. In your PHP code, include the library like so:
 
 ```php
@@ -162,8 +162,33 @@ $environment = new W18T();
 echo $environment;
 ?>
 ```
-### Git
+### Method C
 
+**Git**. The most helpful way of installing libraries in PHP is by using daily builds. This encourages developers to work-and-use packages with latest daily updates. For this method, installation is done by command-line.
+
+1. Make sure you have installed Git - [Installation procedure](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+2. Go to your working directory
+
+```sh
+cd /path/to/working-dir
+```
+
+3. Add the W18T library in your project's library packages
+
+```sh
+git clone https://github.com/abelcallejo/wordpress-environment.git
+```
+
+4. In your PHP code, include the library like so:
+
+```php
+<?php
+require_once '/path/to/working-dir/wordpress-environment/W18T.class.php';
+$environment = new W18T();
+
+echo $environment;
+?>
+```
 ## Releases
 
 ### v1.0 Alpha
