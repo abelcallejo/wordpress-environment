@@ -6,6 +6,6 @@
     "homepage": "https://github.com/abelcallejo/wordpress-environment",
     "license": "MIT",
     "require": {
-        "php": ">=5.2"
+        "php": ">=5.2.0"
     }
 }
