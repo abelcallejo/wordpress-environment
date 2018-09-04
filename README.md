@@ -116,7 +116,7 @@ I've made a very simple wordpress plugin that uses the W18T library. All you hav
 
 ## Installation
 
-Installing the W18T library can be done in 3 different methods. Select the one that suits you best.
+Integrating the W18T library to your project can be done in 3 ways. Select the method that suits you best.
 
 ### Method A
 
