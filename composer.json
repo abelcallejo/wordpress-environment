@@ -4,6 +4,7 @@
     "description": "A wordpress library for easily getting the major environment variables",
     "keywords": ["wordpress","php","apache","mysql","os","version"],
     "homepage": "https://github.com/abelcallejo/wordpress-environment",
+    "license": "MIT",
     "require": {
         "php": ">=5.2"
     }
